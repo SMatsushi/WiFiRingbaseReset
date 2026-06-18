@@ -12,8 +12,8 @@
 
 ![Circuit Diagram](/RingReset.png)
 File:
-* png image file: RinReset.png 
-* source: RingReset.ce3 (for schmatic editor 'BSch3V')
+* png image file: ./RingReset.png 
+* source: ./RingReset.ce3 (for schmatic editor 'BSch3V')
 
 On the circuit diagram, 'CN1' is connected to an LED for testing. It is connected to the both terminals of the reset switch in 'Ring Base Station' during operation.
 
