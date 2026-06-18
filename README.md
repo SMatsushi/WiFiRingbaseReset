@@ -5,9 +5,9 @@
 * OLED SSD1306
 
 ## Circuit Diagram
-![Circuit Diagram](RingReset.png)Arduino
+![Circuit Diagram](RingReset.png)
 
-In the diagram, 'CN1' is connected to an LED for testing. It is connected to the both terminal of the reset switch of 'Ring Base Station' during operation.
+On the circuit diagram, 'CN1' is connected to an LED for testing. It is connected to the both terminals of the reset switch in 'Ring Base Station' during operation.
 
 ## Arduino IDE download link
 [https://www.arduino.cc/en/software/](https://www.arduino.cc/en/software/)
