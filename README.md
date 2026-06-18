@@ -27,7 +27,7 @@ The Arduino code is 'WiFiRingbaseReset/WiFiRingbaseReset.ino'.
 
 ### Related Links
 * OLED control code: [https://github.com/ThingPulse/esp8266-oled-ssd1306/](https://github.com/ThingPulse/esp8266-oled-ssd1306/) 
- - [ OLED control keyword ](https://github.com/ThingPulse/esp8266-oled-ssd1306/blob/master/keywords.txt) for the code above.
+ ** [ OLED control keyword ](https://github.com/ThingPulse/esp8266-oled-ssd1306/blob/master/keywords.txt) for the code above.
 * [ ESP32 Self-reset API ] (https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/system/misc_system_api.html)
 * [ ESP32 Watch Dog timer sample ] (https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/system/wdts.html)
 
