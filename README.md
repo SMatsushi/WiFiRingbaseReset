@@ -1,11 +1,15 @@
 # WiFiRingbaseReset
 
-## Devices 
+## System Configuration Diagram
+![System Configuration Diagram](/images/RBR_System.png)
+
+## Devices on the Board
 * ESP32 VE32 - devkit - ESP32-WROVER-E (Arduino)
 * OLED SSD1306
+* Relay Module (5V operation)
 
 ## Circuit Diagram
-![Circuit Diagram](RingReset.png)
+![Circuit Diagram](/RingReset.png)
 
 On the circuit diagram, 'CN1' is connected to an LED for testing. It is connected to the both terminals of the reset switch in 'Ring Base Station' during operation.
 
