@@ -11,13 +11,14 @@
   * Ring Keypad, Digital Doorlock (Yale YRD256, etc), Motion detectors, Window/door status (open/close) sensors, Smork/CO detector listeners, etc.
   * If the internet connection is lost, the Ring Basestation goes to backup mode with AT&T Cellular network and provides only some serious security issues.
   * When the internet connection is recovered, the Ring Basestation sometimes stays in AT&T Cellular network connection.
-  * A custom BroadBand router on the fanless x86 server detects internet connection loss and triggers the following procedures. As a part of the sequence, this WiFiRingbase Reset is triggered to recover its internet connection from the backup cellular connection for restoring the full functionality:
+  * A custom BroadBand router on the fanless x86 server detects internet connection loss and triggers the following procedures. As a part of the sequence, this WiFiRingbaseReset is triggered to recover its internet connection from the backup cellular connection for restoring the full functionality:
     * The custom BroadBand router (BBrouter) is connected Xfinity cable modem.
     * 'recovWAN.py' running on BBrouter periodically (every 5 minutes) by cron.tab and performs followings:
       * 'recovWAN.py' detects the internet connection loss when neither of the pings to DNS servers responds.
       * Resets the internet port with "systemctl restart NetworkManager", since the Xfinity modem provides after its autonomous reboots/updates an abnormal IP address, such as 192.168.100.10 (instead of the correct global IP like 76.133.103.xxx), to the BBrouter.
       * If the internet connection remains lost after multiple tries of the internet port reset, 'recovWAN.py' triggers an Arduino device connected to BBrouter with a USB port and toggles the DC power line of the Xfinity modem to reboot the modem.
       * When 'recovWAN.py' detects the internet connection recovery, it triggers 'toggleESP32.py' to reset the Ring Basestation with this WiFiRingbaseReset device.
+  * Related files on the custom BBrouter will be uploaded to my GitHub soon.
 ## Devices on the Board
 * ESP32 VE32 - devkit - ESP32-WROVER-E (Arduino)
 * OLED SSD1306
